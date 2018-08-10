@@ -121,6 +121,9 @@ DocumentHandler.prototype.loadDocumentFromArguments = function (filePath) {
 
         ApplicationPane._instance.busy();
 
+        //this.controller.applicationPane.pageListView.restartFilterCache();
+        this.resetDocument();
+
         handler.loadDocument(filePath)
             .then(function () {
                 thiz.controller.modified = false;
