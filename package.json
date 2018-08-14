@@ -1,8 +1,8 @@
 {
   "name": "Pencil",
   "devDependencies": {
-    "electron-builder": "13.3.0",
-    "electron": "1.4.14",
+    "electron-builder": "19.56.2",
+    "electron": "1.4.16",
     "rimraf": "^2.5.4"
   },
   "build": {
@@ -42,11 +42,7 @@
       "packageCategory": "graphics"
     },
     "win": {
-      "authors": "Evolus",
-      "owners": "Evolus",
-      "description": "An open-source GUI prototyping tool that is available for ALL platforms.",
-      "copyright": "Copyright © 2008-2016 Evolus. All rights reserved.",
-      "iconUrl": "https://raw.githubusercontent.com/evolus/pencil/master/build/icon.ico",
+      "asar": true,
       "target": "nsis"
     },
     "nsis": {
