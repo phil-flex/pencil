@@ -1,9 +1,9 @@
 {
   "name": "Pencil",
   "devDependencies": {
-    "electron-builder": "19.56.2",
-    "electron": "1.4.16",
-    "rimraf": "^2.5.4"
+    "electron-builder": "20.38.5",
+    "electron": "1.7.16",
+    "rimraf": "^2.6.3"
   },
   "build": {
     "appId": "vn.evolus.pencil",
