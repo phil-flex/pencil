@@ -1,8 +1,8 @@
 {
   "name": "Pencil",
   "devDependencies": {
+    "electron": "1.7.16",
     "electron-builder": "20.38.5",
-    "electron": "1.4.16",
     "rimraf": "^2.6.3"
   },
   "build": {
@@ -66,7 +66,7 @@
     "postinstall": "install-app-deps",
     "install-app-deps": "node ./node_modules/electron-builder/out/install-app-deps.js",
     "start": "./node_modules/.bin/electron ./app",
-    "start:dev": "./node_modules/.bin/electron ./app --enable-dev --disable-gpu",
+    "start:dev": "./node_modules/.bin/electron ./app --enable-dev --disable-gpu --inspect-brk=5858",
     "start:mac": "./node_modules/.bin/electron ./app --enable-dev",
     "clean": "rimraf dist",
     "pack": "build",
