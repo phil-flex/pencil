@@ -1,7 +1,7 @@
 {
   "name": "Pencil",
   "devDependencies": {
-    "electron": "1.7.16",
+    "electron": "^1.7.16",
     "electron-builder": "20.38.5",
     "rimraf": "^2.6.3"
   },
