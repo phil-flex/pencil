@@ -1,13 +1,14 @@
 {
   "name": "Pencil",
   "devDependencies": {
-    "electron": "^1.7.16",
-    "electron-builder": "20.38.5",
+    "electron": "1.7.16",
+    "electron-builder": "^20.38.5",
     "rimraf": "^2.6.3"
   },
   "build": {
     "appId": "vn.evolus.pencil",
     "productName": "Pencil",
+    "electronVersion": "1.7.16",
     "copyright": "Copyright © 2008-2016 Evolus. All rights reserved.",
     "mac": {
       "category": "public.app-category.graphics-design"
@@ -63,7 +64,7 @@
     }
   },
   "scripts": {
-    "postinstall": "install-app-deps",
+    "postinstall": "electron-builder install-app-deps",
     "install-app-deps": "node ./node_modules/electron-builder/out/install-app-deps.js",
     "start": "./node_modules/.bin/electron ./app",
     "start:dev": "./node_modules/.bin/electron ./app --enable-dev --disable-gpu --inspect-brk=5858",
